@@ -9,8 +9,8 @@ I've been excited about technology for as long as I can remember and have been w
 
 Ambitions for this class
 
-...
+In this class I would like to get a more official grip on using Git as well as creating websites without utilizing frameworks such as Bootstrap. Given my previous experience with web development, I would also like to devote more time to not just creating a website that works but also one that is delightful to use and delightful to look at.
 
 Ambitions for career
 
-...
+I ideally see myself as a project or product manager in a techonology-focused company. For me, a project manager's job is to bring together the various stakeholders (users, designers, engineers, etc) of a project together and create an awesome solution.
