@@ -1,22 +1,27 @@
+/* modularscale.com */
+
 body {
     font-family: "Comic Sans MS", sans-serif;
     font-size: 16px;
-    padding: 1em 1em 1em 1em;
+    padding: 2em 2em 2em 2em;
+    background-color: black;
+    color: lime;
 }
 
 h1 {
     font-size: 2em;
     font-weight: bold;
-    padding: 0em 0em 1em 0em;
+    padding: 0em 0em 2em 0em;
+    text-align: left;
 }
 
 h2 {
     font-size: 1.5em;
-    font-weight: bold;
-    padding: 0em 0em 1em 0em;
+    font-style: normal;
+    padding: 0em 0em .5em 0em;
 }
 
 p {
     line-height: 1.5em;
-    padding: 0em 0em 1em 0em;
+    padding: 0em 0em 3em 0em;
 }
