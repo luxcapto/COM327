@@ -1,4 +1,6 @@
-/* modularscale.com 
+/*
+
+modularscale.com 
 
 1.6 ratio
 
@@ -34,6 +36,6 @@ h2 {
 }
 
 p {
-    line-height: 1.6em;
+    line-height: 1.6;
     padding: 0em 0em 4.096em 0em;
 }
