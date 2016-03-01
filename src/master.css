@@ -27,6 +27,10 @@ h1 {
 	color: #404040;
 }
 
+.lead-image img {
+	padding: 2.56em 2.56em 2.56em 2.56em;
+}
+
 ul {
 	list-style-type: none;
 	padding: 0em 0em 0em 2.56em;
@@ -56,3 +60,21 @@ li a {
 		position: absolute;
 		width: 57%;
 	}
+}
+
+.flexbox .lead {
+	position: static;
+	display: flex;
+}
+
+.flexbox .lead-image {
+	margin-left: 0;
+	width: auto;
+	flex-basis: 57%;
+}
+
+.flexbox .lead-text {
+	position: static;
+	width: auto;
+	flex-basis: 33%;
+}
