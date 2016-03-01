@@ -1,16 +1,50 @@
 /*
-    modularscale.com 
-    1.6 ratio
-    6.554em
-    4.096em
-    2.56em
-    1.6em
-    1em
-    0.625em
-    0.391em
-    0.244em
+	modularscale.com 
+	1.6 ratio
+	6.554em
+	4.096em
+	2.56em
+	1.6em
+	1em
+	0.625em
+	0.391em
+	0.244em
 */
 
-h1 {
-    font-size: 2.56em;
+body {
+	font-family: sans-serif;
 }
+
+h1 {
+	font-size: 2.56em;
+	padding: 1em 1em 1em 1em;
+	color: #514ca9;
+}
+
+.lead-text p {
+	line-height: 1.6em;
+	padding: 2.56em 2.56em 2.56em 2.56em;
+	color: #404040;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0em 0em 0em 2.56em;
+	text-align: center;
+	overflow: hidden;
+	background-color: #514ca9;
+}
+
+li {
+	float: left;
+	text-align: center;
+}
+
+li a {
+	display: inline-block;
+	padding: 1em 1em 1em 0em;
+	text-decoration: none;
+	color: white;
+}
+
+
