@@ -23,12 +23,13 @@ h1 {
 
 .lead-text p {
 	line-height: 1.6em;
-	padding: 2.56em 2.56em 2.56em 2.56em;
+	padding: 2.56em 6.554em 2.56em 2.56em;
 	color: #404040;
 }
 
 .lead-image img {
 	padding: 2.56em 2.56em 2.56em 2.56em;
+	float: right;
 }
 
 ul {
@@ -53,12 +54,12 @@ li a {
 
 @media screen and (min-width: 33.33em) {
 	.lead-image {
-		margin-left: 33%;
-		width: 33%;
+		margin-left: 50%;
+		width: 50%;
 	}
 	.lead-text {
 		position: absolute;
-		width: 57%;
+		width: 50%;
 	}
 }
 
@@ -68,13 +69,16 @@ li a {
 }
 
 .flexbox .lead-image {
-	margin-left: 0;
+	margin-left: auto;
+	margin-right: auto;
 	width: auto;
-	flex-basis: 57%;
+	flex-basis: 50%;
 }
 
 .flexbox .lead-text {
 	position: static;
+	margin-right: auto;
+	margin-left: auto;
 	width: auto;
-	flex-basis: 33%;
+	flex-basis: 50%;
 }
