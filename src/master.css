@@ -1,6 +1,7 @@
 /*
 	modularscale.com 
 	1.6 ratio
+
 	6.554em
 	4.096em
 	2.56em
@@ -13,7 +14,6 @@
 
 body {
 	font-family: sans-serif;
-	background-color: #fafafa;
 }
 
 h1 {
@@ -21,22 +21,7 @@ h1 {
 	font-size: 2.56em;
 	padding: 1em 1em 1em 1em;
 	color: #514ca9;
-}
-
-nav {
-	font-family: "Comic Sans MS", sans-serif;
-
-}
-
-.lead-text p {
-	line-height: 1.6em;
-	padding: 2.56em 6.554em 2.56em 2.56em;
-	color: #404040;
-}
-
-.lead-image img {
-	padding: 2.56em 2.56em 2.56em 2.56em;
-	float: right;
+	text-align: center;
 }
 
 ul {
@@ -49,7 +34,6 @@ ul {
 
 li {
 	float: left;
-	text-align: center;
 }
 
 li a {
@@ -58,6 +42,40 @@ li a {
 	text-decoration: none;
 	color: white;
 }
+
+.lead {
+	padding: 2.56em;
+}
+
+.lead-text p {
+	line-height: 1.6em;
+	padding: 0em 0em 0em 2.56em;
+	color: #404040;
+}
+
+.lead-image img {
+	display: block;
+	max-width: 100%;
+}
+
+.flexbox .lead {
+	position: static;
+	display: flex;
+	flex-direction: row;
+}
+
+.flexbox .lead-image {
+	min-width: 50%;
+	width:auto;
+	flex-basis: 50%;
+}
+
+.flexbox .lead-text {
+	position: static;
+	width: auto;
+	flex-basis: 50%;
+}
+/*
 
 @media screen and (min-width: 33.33em) {
 	.lead-image {
@@ -69,19 +87,4 @@ li a {
 		width: 50%;
 	}
 }
-
-.flexbox .lead {
-	position: static;
-	display: flex;
-}
-
-.flexbox .lead-image {
-	width: auto;
-	flex-basis: 50%;
-}
-
-.flexbox .lead-text {
-	position: static;
-	width: auto;
-	flex-basis: 50%;
-}
+*/
