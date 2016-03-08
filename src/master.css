@@ -47,20 +47,14 @@ li a {
 	max-width: 50em;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.lead-text {
-	margin-right: 2.56em;
-}
-
-.lead-image {
-	margin-left: 2.56em;
+	padding-left: 2.56em;
 	padding-right: 2.56em;
 }
 
 .lead-text p {
 	line-height: 1.6em;
 	color: #404040;
+	padding-left: 2.56em;
 }
 
 .lead-image img {
