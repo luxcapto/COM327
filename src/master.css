@@ -56,6 +56,16 @@ li a {
 	padding-left: 2.56em;
 }
 
+.lead-text button {
+	color: white;
+	background-color: #514ca9;
+	font-size: 1em;
+	padding: .625em;
+	margin-top: 1em;
+	border: none;
+}
+
+
 .lead-image img {
 	display: block;
 	max-width: 100%;
