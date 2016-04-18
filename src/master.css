@@ -163,18 +163,30 @@ a.custom-button:link {
 		flex: 1 0 50%;
 		min-width: 50%;
 	}
-	
+
+	.flexbox .portfolio-group {
+		flex-direction: column;
+		align-items: center;
+	}	
 	.portfolio-image {
 		flex: 1 0 50%;
 		min-width: 50%;
 	}
 
-	.portfolio-text p {
+	.portfolio-image img {
+	}
+
+
+	.portfolio-text p, .portfolio-text h2 {
+		text-align: center;
+		padding-left: 0em;
+
 	}
 
 	.portfolio-text {
 		flex: 1 0 50%;
 		min-width: 50%;
+		padding-top: 1em;
 	}
 }
 
