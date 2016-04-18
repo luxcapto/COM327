@@ -23,7 +23,7 @@ body {
 	font-family: sans-serif;
 }
 
-h1 {
+.site-title h1 {
 	font-family: "brandon-grotesque", sans-serif;
 	font-size: 2.56em;
 	padding: 1em 1em 1em 1em;
@@ -31,6 +31,13 @@ h1 {
 	text-align: center;
 }
 
+.portfolio-heading h1 {
+	font-family: "brandon-grotesque", sans-serif;
+	font-size: 2.56em;
+	padding: .625em;;
+	color: #514ca9;
+	text-align: center;
+}
 .portfolio-text h2 {
 	font-family: "brandon-grotesque", sans-serif;
 	font-size: 1.6em;
@@ -58,6 +65,10 @@ li a {
 	color: white;
 }
 
+a.active-tab {
+	background-color: rgb(55, 52, 119);
+}
+
 .lead {
 	margin-top: 2.56em;
 	max-width: 50em;
@@ -76,7 +87,6 @@ li a {
 
 
 .portfolio-group{
-	margin-top: 2.56em;
 	max-width: 50em;
 	margin-left: auto;
 	margin-right: auto;
@@ -104,6 +114,10 @@ li a {
 a.custom-button:link {
 	text-decoration: none;
 }
+
+a.custom-button:hover {
+	background-color: rgb(55, 52, 119);
+} 
 
 
 .lead-image img {
