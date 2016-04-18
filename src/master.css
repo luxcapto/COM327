@@ -138,6 +138,7 @@ a.custom-button:hover {
 
 .portfolio-image img{
 	float: right;
+	padding-bottom: 1em;
 }
 
 .flexbox .lead {
