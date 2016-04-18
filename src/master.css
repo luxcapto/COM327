@@ -1,6 +1,14 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *       License: none (public domain)
+ *       */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
 /*
 	modularscale.com 
 	1.6 ratio
+
 	6.554em
 	4.096em
 	2.56em
@@ -13,7 +21,6 @@
 
 body {
 	font-family: sans-serif;
-	background-color: #fafafa;
 }
 
 h1 {
@@ -21,62 +28,70 @@ h1 {
 	font-size: 2.56em;
 	padding: 1em 1em 1em 1em;
 	color: #514ca9;
+	text-align: center;
 }
 
-nav {
-	font-family: "Comic Sans MS", sans-serif;
-
+ul li {
+  display: inline;
+  list-style-type: none;
 }
-
-.lead-text p {
-	line-height: 1.6em;
-	padding: 2.56em 6.554em 2.56em 2.56em;
-	color: #404040;
-}
-
-.lead-image img {
-	padding: 2.56em 2.56em 2.56em 2.56em;
-	float: right;
-}
-
 ul {
-	list-style-type: none;
-	padding: 0em 0em 0em 2.56em;
 	text-align: center;
+  margin: 0 auto;
 	overflow: hidden;
-	background-color: #514ca9;
-}
-
-li {
-	float: left;
-	text-align: center;
+  background-color: #514ca9;
 }
 
 li a {
 	display: inline-block;
-	padding: 1em 1em 1em 0em;
+	padding: 1em .625em 1em .625em;
 	text-decoration: none;
 	color: white;
 }
+.lead {
+	margin-top: 2.56em;
+	max-width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2.56em;
+	padding-right: 2.56em;
+}
 
-@media screen and (min-width: 33.33em) {
-	.lead-image {
-		margin-left: 50%;
-		width: 50%;
-	}
-	.lead-text {
-		position: absolute;
-		width: 50%;
-	}
+.lead-text p {
+	line-height: 1.6em;
+	color: #404040;
+	padding-left: 2.56em;
+	padding-bottom: 2.56em;
+}
+
+.custom-button  {
+	color: white;
+	background-color: #514ca9;
+	font-size: 1em;
+	padding: .625em;
+	margin-top: 1em;
+	border: none;
+	border-radius: .425em;
+}
+
+a.custom-button:link {
+	text-decoration: none;
+}
+
+
+.lead-image img {
+	display: block;
+	max-width: 100%;
 }
 
 .flexbox .lead {
-	position: static;
 	display: flex;
+	flex-direction: row;
 }
 
 .flexbox .lead-image {
-	width: auto;
+	min-width: 50%;
+	width:auto;
 	flex-basis: 50%;
 }
 
@@ -85,3 +100,21 @@ li a {
 	width: auto;
 	flex-basis: 50%;
 }
+
+@media screen and (max-width: 33em) {
+	.lead-image {
+		flex: 1 0 50%;
+		min-width: 50%;
+		display: none;
+	}
+
+	.lead-text p {
+		padding-left: 0;
+	}
+
+	.lead-text {
+		flex: 1 0 50%;
+		min-width: 50%;
+	}
+}
+
