@@ -34,9 +34,12 @@ body {
 .portfolio-heading h1 {
 	font-family: "brandon-grotesque", "Verdana", "Arial", sans-serif;
 	font-size: 2.56em;
-	padding: .625em;;
-	color: #514ca9;
+	padding: .391em;;
+	color: white;
 	text-align: center;
+	background-color: #d3cfdb;
+	margin-top: .625em;
+	margin-bottom: .625em;
 }
 
 .contact h1 {
@@ -47,10 +50,13 @@ body {
 	text-align: center;
 	
 }
+
+.portfolio-text {
+	padding-left: 1.6em;
+}
 .portfolio-text h2 {
 	font-family: "brandon-grotesque", "Verdana", "Arial", sans-serif;
 	font-size: 1.6em;
-	padding-left: 1.6em;
 	padding-bottom: .391em;
 	color: #514ca9;
 	text-align: left;
@@ -106,9 +112,8 @@ a.active-tab {
 }
 
 .portfolio-text p {
-	line-height: 1.6em;
+	line-height: 1em;
 	color: #404040;
-	padding-left: 2.56em;
 	padding-bottom: 2.56em;
 }
 
@@ -139,6 +144,7 @@ a.custom-button:hover {
 .portfolio-image img{
 	float: right;
 	padding-bottom: 1em;
+	padding-right: 1em;
 }
 
 .flexbox .lead {
