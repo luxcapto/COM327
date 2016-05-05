@@ -21,9 +21,22 @@
           <a href='http://dev2.rytis.biz/portfolio.html'>portfolio</a>
         </li>
         <li>
-          <a class='active-tab' href='http://luxapto.tumblr.com'>blog</a>
+          <a class='active-tab' href='http://luxcapto.tumblr.com'>blog</a>
         </li>
       </ul>
     </nav>
+    {block:Posts}
+    {block:Text}
+    <div class='lead-text'>
+      <h1>
+        {Title}
+      </h1>
+      <p>
+        {Body}
+      </p>
+      <p>
+        Posted on {Month} {DayOfMonth}, {Year}
+      </p>
+    </div>
   </body>
 </html>

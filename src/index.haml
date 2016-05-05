@@ -17,7 +17,17 @@
         %li
           %a{:href => "http://dev2.rytis.biz/portfolio.html"} portfolio
         %li
-          %a.active-tab{:href => "http://luxapto.tumblr.com"} blog
+          %a.active-tab{:href => "http://luxcapto.tumblr.com"} blog
+    {block:Posts}
+    {block:Text}
+    .lead-text
+      %h1
+        {Title}
+      %p
+        {Body}
+      %p
+        Posted on {Month} {DayOfMonth}, {Year} 
+
 
         
 
