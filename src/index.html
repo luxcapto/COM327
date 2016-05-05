@@ -27,16 +27,37 @@
     </nav>
     {block:Posts}
     {block:Text}
-    <div class='lead-text'>
+    <div class='portfolio-heading'>
       <h1>
         {Title}
       </h1>
+    </div>
+    <div class='portfolio-text'>
       <p>
         {Body}
       </p>
       <p>
-        Posted on {Month} {DayOfMonth}, {Year}
+        <a href='{Permalink}'>Posted on {Month} {DayOfMonth}, {Year}</a>
       </p>
     </div>
+    {/block:Text}
+    {block:Photo}
+    <div class='portfolio-heading'>
+      <h1>
+        {Caption}
+      </h1>
+    </div>
+    <div class='portfolio-group'>
+      <div class='portfolio-image'>
+        <img alt='{PhotoAlt}' height='300px' src='{PhotoURL-HighRes}'>
+      </div>
+      <div class='portfolio-text'>
+        <p id='photo{PostID}'>{Caption}</p>
+        <p>
+          <a href='{Permalink}'>Posted on {Month} {DayOfMonth}, {Year}</a>
+        </p>
+      </div>
+    </div>
+    {/block:Photo}
   </body>
 </html>

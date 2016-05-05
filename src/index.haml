@@ -20,13 +20,27 @@
           %a.active-tab{:href => "http://luxcapto.tumblr.com"} blog
     {block:Posts}
     {block:Text}
-    .lead-text
+    .portfolio-heading
       %h1
         {Title}
+    .portfolio-text  
       %p
         {Body}
       %p
-        Posted on {Month} {DayOfMonth}, {Year} 
+        %a{href: "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year} 
+    {/block:Text}
+    {block:Photo}
+    .portfolio-heading
+      %h1
+        {Caption}
+    .portfolio-group
+      .portfolio-image
+        %img{src: "{PhotoURL-HighRes}", alt: "{PhotoAlt}", height: "300px"}
+      .portfolio-text
+        %p{id: "photo{PostID}"} {Caption} 
+        %p
+          %a{href: "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year}
+    {/block:Photo}
 
 
         
