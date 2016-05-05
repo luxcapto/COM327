@@ -30,12 +30,11 @@
         %a{href: "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year} 
     {/block:Text}
     {block:Photo}
-    .portfolio-heading
+    .portfolio-heading 
       %h1
         {Caption}
     .portfolio-group
-      .portfolio-image
-        %img{src: "{PhotoURL-HighRes}", alt: "{PhotoAlt}", height: "300px"}
+      %img{src: "{PhotoURL-HighRes}", alt: "{PhotoAlt}", height: "300px"}
       .portfolio-text
         %p{id: "photo{PostID}"} {Caption} 
         %p
